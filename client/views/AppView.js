@@ -15,7 +15,6 @@ var AppView = Backbone.View.extend({
     this.model.get('songQueue').on('add', function(){
       this.songQueueView.render();
 
-      console.log('length', this.model.get('songQueue').length)
       if ( this.model.get('songQueue').length === 1 ) {
         this.model.get('songQueue').playFirst();
       }
