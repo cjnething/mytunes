@@ -5,10 +5,9 @@ var SongQueue = Songs.extend({
   },
 
   playFirst: function() {
-    // find song at position 0 in queue and play it
     this.at(0).play();
-    console.log('this', this);
-    console.log('first song', this.at(0));
+
+    console.log('playFirst called');
   }
 
 
